@@ -1,0 +1,63 @@
+@font-face{
+    font-family: 'PartyConfetti';
+    src: url("PartyConfetti.ttf")
+}
+/*#1b202b*/
+nav{
+    width: auto;
+    background-color: rgb(36, 42, 55);
+    top: 0;
+    padding: 0px;
+    margin: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    border-bottom: 1px solid #1b202b;
+    height: 60px;
+    padding-top: 10px;
+}
+.title {
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'PartyConfetti';
+    color: white;
+    padding-left: 15px;
+    
+}
+.title:link .title:visited{
+    color: #ffff;
+}
+body{
+    background:#2f3747;
+    margin: 0px;
+}
+#main-content{
+    padding-left: 30px;
+}
+#sets {
+    font-family: 'PartyConfetti';
+    color: #ffffff;
+    font-size: 25px;    
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    min-height: 400px;
+}
+.card{
+    margin: 15px;
+    height: 200px;
+    width: 350px;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: 10px 10px #212631;
+    bottom: 0px;
+    transition: 350ms;
+    
+}
+
+.card:hover{
+    background: #ff0000;
+    position: relative;
+    box-shadow: 20px 20px #212631;
+    transform: translateY(-10px);
+}

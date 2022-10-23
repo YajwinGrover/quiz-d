@@ -41,7 +41,7 @@ body{
 }
 .cards{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3,450px);
     min-height: 400px;
 }
 .card{

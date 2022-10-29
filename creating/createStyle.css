@@ -1,0 +1,33 @@
+@font-face{
+    font-family: 'PartyConfetti';
+    src: url("/PartyConfetti.ttf")
+}
+/*#1b202b*/
+nav{
+    width: auto;
+    background-color: rgb(36, 42, 55);
+    top: 0;
+    padding: 0px;
+    margin: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    border-bottom: 1px solid #1b202b;
+    height: 60px;
+    padding-top: 10px;
+    z-index: 1;
+}
+.title {
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'PartyConfetti';
+    color: white;
+    padding-left: 15px;
+    
+}
+.title:link .title:visited{
+    color: #ffff;
+}
+body{
+    background:#2f3747;
+    margin: 0px;
+}

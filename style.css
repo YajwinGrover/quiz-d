@@ -2,9 +2,13 @@
     font-family: 'PartyConfetti';
     src: url("PartyConfetti.ttf")
 }
+
+:root{
+    --card-size: 350px
+}
 /*#1b202b*/
 nav{
-    width: auto;
+    width: 1fr;
     background-color: rgb(36, 42, 55);
     top: 0;
     padding: 0px;
@@ -18,7 +22,7 @@ nav{
 }
 .title {
     text-decoration: none;
-    font-size: 40px;
+    font-size: max(40px,3vw);
     font-family: 'PartyConfetti';
     color: white;
     padding-left: 15px;
@@ -37,11 +41,11 @@ body{
 #sets {
     font-family: 'PartyConfetti';
     color: #ffffff;
-    font-size: 25px;    
+    font-size: max(2vw, 25px);    
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(3,450px);
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--card-size) + 10px), 1fr));
     min-height: 400px;
 }
 .card{
@@ -68,7 +72,7 @@ body{
     margin: 15px;
     height: 200px;
     width: 350px;
-    background: #424c61;
+    background: #586580;
     border-radius: 25px;
     box-shadow: 10px 10px #212631;
     bottom: 0px;

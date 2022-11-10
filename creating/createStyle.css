@@ -2,6 +2,8 @@
     font-family: 'PartyConfetti';
     src: url("/PartyConfetti.ttf")
 }
+
+
 /*#1b202b*/
 nav{
     width: auto;
@@ -15,6 +17,7 @@ nav{
     height: 60px;
     padding-top: 10px;
     z-index: 1;
+    flex:non
 }
 .title {
     text-decoration: none;
@@ -27,7 +30,67 @@ nav{
 .title:link .title:visited{
     color: #ffff;
 }
+html,body{
+    height:100%;
+}
 body{
     background:#2f3747;
     margin: 0px;
+}
+
+#container{
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid green;
+    display: grid;
+    grid-gap: 4vh;
+    justify-content: center;
+
+}
+section{
+    border: 1px solid red;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'PartyConfetti';
+    color: #ffffff;
+    font-size: max(2vw, 25px);
+    padding: 1rem;
+    flex: none;
+}
+
+[class^="add"]{
+    height: max(30vh,200px);
+    width: max(75vw, 300px);
+}
+[class^="desc"]{
+    border-radius: 25px;
+    background-color: #586580;
+    border: 0.3rem solid #212631;
+}
+.desc-title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    
+
+}
+.desc-description{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.add-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 3vh;
+
+}
+.add-card{
+    background-color: #586580; 
+    box-shadow: 10px 10px #212631;
+    border-radius: 25px;
 }
